@@ -1,17 +1,6 @@
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-    margin: 0;
-}
-
-main {
-    flex: 1; 
-    margin-bottom: 20px;
-}
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 .container-fluid {
     background-color:#FFFFFF;
@@ -37,7 +26,7 @@ h1 {
     background-color: #ffe25f;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(29, 13, 210, 0.1);
-    width: 200px;
+    width: 140px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -50,7 +39,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .note button {
@@ -72,34 +61,22 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 15px;
 }
 
 .add-note:hover {
     background-color: #3573d1;
 }
-
+/* Asegura que el footer esté abajo y responsivo */
 .footer {
-    position:relative;
-    bottom: 0; 
-    left: 0; 
-    right: 0; 
-    background-color: #0d6efd; 
-    text-align: center; 
-    padding: 1rem; 
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
-    font-size: 0.9rem; 
-    color: white; 
-    z-index: 1000; 
-}
-.note label {
-    font-size: 14px;
-    font-family:cursive;
-    margin-right: 5px;
-    
-}
-
-.note input[type="checkbox"] {
-    transform: scale(1.2);
-    cursor: pointer;
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Lo alinea al borde inferior */
+    left: 0; /* Alinea al borde izquierdo */
+    right: 0; /* Alinea al borde derecho */
+    background-color: #0d6efd; /* Fondo claro */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 1rem; /* Espaciado interno */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    font-size: 0.9rem; /* Tamaño de texto */
+    color: white; /* Color del texto */
+    z-index: 1000; /* Asegura que el footer quede por encima de otros elementos */
 }
